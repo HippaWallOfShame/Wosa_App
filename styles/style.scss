@@ -1,0 +1,160 @@
+$main1: #413641;
+$main2: #fc0511;
+$main3: #b8b7a5;
+$main4:#FFB6B6;
+$main5: #677b95;
+$shadow: 3px 3px 6px $main5;
+* {
+    font-family: 'Libre Baskerville', serif, cursive;
+}
+
+header {
+    text-align: center;
+    background-color: $main1;
+    height: 10em;
+    width: 100%;
+    color: #fff;
+    text-shadow: 2px 2px 6px $main1;
+    padding: 1% 2%;
+}
+
+.logo {
+    height: 2em;
+    background-color: $main2;
+    padding-top: 2%;
+    letter-spacing: .5em;
+}
+
+@media all and (max-width: 804px) {
+    .logo {
+        font-size: 24px;
+        letter-spacing: 0%;
+        height: 4em;
+    }
+}
+
+@media all and (max-width: 270px) {
+    .logo {
+        height: 4em;
+    }
+}
+
+.wrapper {
+    margin-top: -1%;
+}
+
+@media all and (max-width:270px) {
+    .wrapper {
+        margin-top: -5%;
+        .brkNws {
+            border: .5em solid $main1;
+        }
+    }
+}
+
+.brkNws {
+    font-size: 16px;
+    width: 100%;
+    border: 2em solid $main1;
+    background-color: $main3;
+    color: #fff;
+    text-shadow: 2px 2px 4px $main2;
+    padding: 1% 0%;
+    word-spacing: 1em;
+    text-align: center;
+}
+
+button {
+    color: #fff;
+    background-color: $main2;
+    text-shadow: 2px 2px 4px $main1;
+    margin-left: 50%;
+    height: 3em;
+    width: 100%;
+    box-shadow: $shadow;
+}
+
+@media all and (max-width:1200px) {
+    button {
+        margin-left: 0%;
+    }
+}
+
+.jumbotron {
+    height: 15em;
+    margin-top: 2%;
+    box-shadow: $shadow;
+}
+
+//Javascript Table colors
+thead {
+    background-color: $main3;
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px #fff;
+}
+
+tr:nth-child(even) {
+    background-color: $main4;
+}
+
+.cs {
+    height: 2em;
+    text-align: center;
+    text-decoration: underline;
+    color: #fff;
+    background-color: $main2;
+    text-shadow: 2px 2px 4px $main1;
+    border: 10px solid $main1;
+    margin-bottom: 0;
+}
+
+form {
+    height: 10em;
+    width: 100%;
+    background-color: $main1;
+    color: #fff;
+}
+
+.search1 {
+    color: $main1;
+    margin-top: 2%;
+    margin-left: 43%;
+    text-align: center;
+}
+
+@media all and (max-width: 1120px) {
+    .search1 {
+        margin-left: 42%;
+        margin-right: -45%
+    }
+}
+
+@media all and (max-width: 960px) {
+    .search1 {
+        margin-top: 5%;
+        margin-left: 38%;
+    }
+}
+
+@media all and ( max-width: 320px) {
+    .search1 {
+        margin-left: 8%;
+    }
+}
+
+.sub {
+    color: $main1;
+    margin-top: 2%;
+    margin-left: 46.5%;
+}
+
+@media all and (max-width:960px) {
+    .sub {
+        margin-top: 5%;
+        margin-left: 38%;
+    }
+}
+
+footer {
+    text-align: center;
+}
